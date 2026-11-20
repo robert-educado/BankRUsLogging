@@ -1,0 +1,17 @@
+@BankRUs.HostAddress = https://localhost:8000
+
+### Ansök om lån
+POST {{BankRUs.HostAddress}}/api/loanapplications
+Accept: application/json
+Content-Type: application/json
+
+{
+  "amount": 100000,
+  "paybackPeriod": 10,
+  "socialSecurityNumber": "19900101-2010",
+  "residenceType": 1,
+  "residenceCost": 6800,
+  "employmentType": 2,
+  "employedSince": "2026-08-01",
+  "salary": 30000
+}
